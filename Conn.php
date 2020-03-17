@@ -7,7 +7,7 @@ class DBController{
     }
     function connectDB(){
         $serverName = '172.19.0.15';
-        $connectionInfo = array("Database"=>"Novasoft_8", "UID"=>"ggomez", "PWD"=>"Cuaical-93", "CharacterSet"=>"UTF-8");
+        $connectionInfo = array("Database"=>"NOMBRE_DB", "UID"=>"USUARIO_DB", "PWD"=>"CONTRASEÑA_DB", "CharacterSet"=>"UTF-8");
         $conn = sqlsrv_connect($serverName, $connectionInfo);
         return $conn;
         if(!$conn)
