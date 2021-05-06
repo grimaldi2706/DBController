@@ -6,7 +6,7 @@ class DBController{
         $this->conn = $this->connectDB();
     }
     function connectDB(){
-        $serverName = '172.19.0.15';
+        $serverName = '192.168.0.1';
         $connectionInfo = array("Database"=>"NOMBRE_DB", "UID"=>"USUARIO_DB", "PWD"=>"CONTRASEÑA_DB", "CharacterSet"=>"UTF-8");
         $conn = sqlsrv_connect($serverName, $connectionInfo);
         return $conn;
